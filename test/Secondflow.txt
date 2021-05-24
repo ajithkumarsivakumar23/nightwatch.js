@@ -1,0 +1,31 @@
+//const path = require('path');
+module.exports = {
+    'testflow': function (browser) {
+
+      browser.url('https://qa.rtcamp.net/members/demo/media/album/')
+      browser.pause(3000)
+      browser.maximizeWindow()
+      browser.waitForElementVisible('body')
+      browser.assert.visible('#bp-login-widget-user-login')
+      browser.setValue('#bp-login-widget-user-login', 'demo')
+      browser.setValue('input[type=password]', 'demo')
+      browser.click('#bp-login-widget-submit')
+      browser.pause(10000)
+      browser.assert.visible('.rtmedia-upload-media-link')
+      browser.click('.rtmedia-upload-media-link')
+      browser.waitForElementVisible('#rtMedia-upload-button')
+      browser.assert.visible('#rtMedia-upload-button')
+      //let fileUpload = '//input[@id="rtMedia-upload-button"]'
+      //let dir = 'E:\\automation-testing\imgs\image.png'
+      //const dir = require('path').resolve(__dirname + '/../imgs/image.png');
+      browser.setValue('input#rtMedia-upload-button', require('path').resolve(__dirname + '/image.jpg'))
+      browser.pause(20000)
+      //browser.assert.visible('.plupload_file')
+      //browser.setValue('input[type="file"]','')
+      //.setValue('input#rtMedia-upload-button', require('path').resolve(__dirname + '/image.jpg'))
+      browser.pause(20000)
+      //.setValue('#rtm_show_upload_ui', require('path').resolve(__dirname + '/../upload/mountains.jpg'))
+      //.click('.start-media-upload')
+      browser.end();
+    }
+  };

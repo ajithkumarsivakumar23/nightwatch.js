@@ -5,9 +5,23 @@
 
   <testsuite name="firstprgm"
     errors="0" failures="0" hostname="" id="" package="firstprgm" skipped="0"
-    tests="1" time="14.68" timestamp="">
+    tests="1" time="45.06" timestamp="">
   
-    <testcase name="Demo test Ecosia.org" classname="firstprgm" time="14.68" assertions="5">
+    <testcase name="Demo test Ecosia.org" classname="firstprgm" time="45.06" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 

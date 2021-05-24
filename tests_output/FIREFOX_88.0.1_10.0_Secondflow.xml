@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="Secondflow"
+    errors="0" failures="0" hostname="" id="" package="Secondflow" skipped="0"
+    tests="1" time="61.93" timestamp="">
+  
+    <testcase name="testflow" classname="Secondflow" time="61.93" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

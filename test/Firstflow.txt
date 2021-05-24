@@ -1,0 +1,38 @@
+module.exports = {
+    'rtPanel-Login and Status update Flow': function (browser) {
+      browser
+        .url('https://qa.rtcamp.net/activity/')
+        .pause(3000)
+        .waitForElementVisible('body')
+        .assert.titleContains('Activity – rtCamp')
+        .assert.visible('#wp-admin-bar-bp-login')
+        .assert.visible('#menu-item-56')
+        .setValue('input[type=text]', 'demos')
+        .setValue('input[type=password]', '00000')
+        .click('#bp-login-widget-submit')
+        .pause(10000)
+        .assert.visible('#login_error')
+        .assert.visible('#backtoblog')
+        .url('https://qa.rtcamp.net/activity')
+        .pause(5000)
+       // .click('#wp-admin-bar-bp-login')
+        .setValue('input[type=text]', 'demo')
+        .assert.visible('#bp-login-widget-user-login')
+        .setValue('input[type=password]', 'demo')
+        .assert.visible('#bp-login-widget-user-pass')
+        .assert.visible('input[name=wp-submit]')
+        .click('#bp-login-widget-submit')
+        .pause(5000)
+        .assert.visible('.logout')
+        .assert.visible('#whats-new')
+        .click('#whats-new')
+        .setValue('#whats-new', 'Good Morning')
+        .assert.visible('.rtmedia-add-media-button')
+        //.click('#rtmedia-add-media-button-post-update')
+        .pause(5000)
+        .click('#rtSelectPrivacy')
+        .click('#aw-whats-new-submit')
+        .end();
+    }
+  };
+  

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="Firstflow"
+    errors="0" failures="0" hostname="" id="" package="Firstflow" skipped="0"
+    tests="1" time="72.12" timestamp="">
+  
+    <testcase name="rtPanel-Login and Status update Flow" classname="Firstflow" time="72.12" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
